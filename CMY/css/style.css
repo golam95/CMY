@@ -1,0 +1,183 @@
+.categories{
+  border: 1px solid #F5F5F5 !important;
+}
+
+.categories h3{
+    text-align: center;
+    font-size: 2.5em;
+    padding: .5em;
+    background: #F5F5F5;
+    color: gray;
+    margin-bottom: .5em;
+}
+/*-- treeview --*/
+.categories label {
+    padding: 5px;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #777;
+}
+.categories a{
+    background: url("../images/icons1.png") no-repeat 10px 9px !important;
+    padding: 7px 0 0 31px;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 15px;
+}
+
+.categories ul,
+.categories li
+{
+	list-style: none;
+}
+
+.categories input
+{
+	position: absolute;
+	opacity: 0;
+}
+
+.categories
+{
+	font: normal 11px "Segoe UI", Arial, Sans-serif;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.categories a {
+    color: #777;
+    text-decoration: none;
+}
+
+.categories a:hover
+{
+	text-decoration: underline;
+}
+
+.categories input + label + ul
+{
+	margin: 0 0 0 22px;
+}
+
+.categories input + label + ul
+{
+	display: none;
+}
+
+.categories label,
+.categories label::before
+{
+	cursor: pointer;
+}
+
+.categories input:disabled + label
+{
+	cursor: default;
+	opacity: .6;
+}
+
+.categories input:checked:not(:disabled) + label + ul
+{
+	display: block;
+}
+
+.categories label,
+.categories label::before
+{
+	background:url("../images/icons1.png") no-repeat 15px 9px !important;
+}
+.categories label,
+.categories a,
+.categories label::before
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.categories label
+{
+	background-position: 18px 0;
+}
+
+.categories label::before
+{
+	content: "";
+	width: 16px;
+	margin: 0 22px 0 0;
+	vertical-align: middle;
+	background-position: 0 -32px;
+}
+
+.categories input:checked + label::before
+{
+	background-position: 0 -16px;
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	.categories
+	{
+		-webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+	}
+	
+	@-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+	{
+		from 
+		{ 
+			padding: 0;
+		} 
+		to 
+		{ 
+			padding: 0;
+		}
+	}
+}
+.categories h3 {
+    font-size: 2.2em;
+}
+.categories label {
+    font-size: 1.3em;
+}
+table.table {
+    width: 100%;
+    border: 1px solid #F5F5F5;
+}
+table.table th{text-align:center;color:gray;font-size:20px;font-weight:bold;}
+td.t-data {
+   
+	color:black;
+    padding: 10px !important;
+	vertical-align: middle !important;
+	font-size: 1em !important;
+}
+td.t-data a{text-decoration:none;padding:5px;background-color:#0062BD;color:white;font-weight:bold;border-radius:5px;}
+th.t-head {
+	background: #F5F5F5;
+    color:black;
+    font-size: 1em !important;
+    padding: 0.6em !important;
+    border: 1px solid #F5F5F5 !important;
+	height:50px;
+	
+}
+a.at-in {
+  float: left;
+}
+a.at-in{
+	border:1px solid #DADADA;
+	padding:1em 0;
+	margin-left: 11%;
+}
+.price,.cat-img,.brand-w3l {
+    margin-top: 2em;
+}
+.center{
+width: 150px;
+margin-top:20px;
+  
+}
